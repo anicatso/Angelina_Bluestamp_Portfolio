@@ -95,4 +95,4 @@ Create colorful light displays with these RGB sliders, which allow you to adjust
 
 ![Headstone Image](AngelinaL.HEIC)
 
-<iframe width="1069" height="601" src="https://www.youtube.com/embed/pBlX93JHfoM" title="Angelina L. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pBlX93JHfoM?si=glxoXZyOp1qT-VlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
