@@ -96,3 +96,9 @@ Create colorful light displays with these RGB sliders, which allow you to adjust
 ![Headstone Image](AngelinaL.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pBlX93JHfoM?si=glxoXZyOp1qT-VlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Bill of Materials
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| DIY Soldering Practice Kit RGB Practice Learning Electronics Training Board | Learn soldering and color mixing | $7.99 | <a href="https://www.amazon.com/gp/product/B0BKM3D927/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1"> Link </a> |
