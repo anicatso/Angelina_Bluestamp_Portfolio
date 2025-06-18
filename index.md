@@ -13,7 +13,7 @@ You should comment out all portions of your portfolio that you have not complete
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
-![Headstone Image](AngelinaL.HEIC)
+![Headstone Image]()
   
 # Final Milestone
 
@@ -89,3 +89,10 @@ One of the best parts about Github is that you can view how other people set up 
 - [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.
+
+# RGB LED Slider
+Create colorful light displays with these RGB sliders, which allow you to adjust the intensity of red, green, and blue lights individually.
+
+![Headstone Image](AngelinaL.HEIC)
+
+<iframe width="1069" height="601" src="https://www.youtube.com/embed/pBlX93JHfoM" title="Angelina L. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
