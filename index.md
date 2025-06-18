@@ -93,7 +93,7 @@ To watch the BSE tutorial on how to create a portfolio, click here.
 # RGB LED Slider
 Create colorful light displays with these RGB sliders, which allow you to adjust the intensity of red, green, and blue lights individually.
 
-![Headstone Image](AngelinaL.png)
+<img src="AngelinaL.png" alt="Headstone Image" width="300"/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pBlX93JHfoM?si=glxoXZyOp1qT-VlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
