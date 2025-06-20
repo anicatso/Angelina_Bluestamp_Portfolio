@@ -1,6 +1,6 @@
 # Biometric Health Monitor
 Monitor your pulse rate with a device that uses a pulse sensor and displays the BPM.
-
+```
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
 <!--- This is an HTML comment in Markdown -->
@@ -10,9 +10,9 @@ You should comment out all portions of your portfolio that you have not complete
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Angelina L | Fusion Academy | Engineering | Incoming Senior
-
+```
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
+```
 ![Headstone Image]()
   
 # Final Milestone
@@ -60,15 +60,63 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
-void setup() {
-  // put your setup code here, to run once:
+// Include necessary libraries
+#define USE_ARDUINO_INTERRUPTS true
+#include <PulseSensorPlayground.h>
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
+ 
+ 
+// Constants
+const int PULSE_SENSOR_PIN = 0;  // Analog PIN where the PulseSensor is connected
+const int LED_PIN = 13;          // On-board LED PIN
+const int THRESHOLD = 550;       // Threshold for detecting a heartbeat
+ 
+// Create PulseSensorPlayground object
+PulseSensorPlayground pulseSensor;
+ 
+void setup()
+{
+  // Initialize Serial Monitor
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  lcd.init();
+  lcd.backlight();
+ 
+  // Configure PulseSensor
+  pulseSensor.analogInput(PULSE_SENSOR_PIN);
+  pulseSensor.blinkOnPulse(LED_PIN);
+  pulseSensor.setThreshold(THRESHOLD);
+ 
+  // Check if PulseSensor is initialized
+  if (pulseSensor.begin())
+  {
+    Serial.println("PulseSensor object created successfully!");
+  }
 }
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
+ 
+void loop()
+{
+  lcd.setCursor(0, 0);
+  lcd.print("Heart Rate");
+  
+  // Get the current Beats Per Minute (BPM)
+  int currentBPM = pulseSensor.getBeatsPerMinute();
+ 
+  // Check if a heartbeat is detected
+  if (pulseSensor.sawStartOfBeat())
+  {
+    Serial.println("♥ A HeartBeat Happened!");
+    Serial.print("BPM: ");
+    Serial.println(currentBPM);
+ 
+    lcd.clear();
+    lcd.setCursor(0, 1);
+    lcd.print("BPM: ");
+    lcd.print(currentBPM);
+  }
+ 
+  // Add a small delay to reduce CPU usage
+  delay(20);
 }
 ```
 
